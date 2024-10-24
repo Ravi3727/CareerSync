@@ -27,5 +27,9 @@
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.13",
     "vite": "^5.4.8"
-  }
+  },
+  "description": "```git checkout -b yourname```   \r ## Make and commit your changes:    \r ```git commit -m 'Add some feature'```    \r ## Push to the branch: \r ```git push origin yourname```   \r ## Open a pull request",
+  "main": "eslint.config.js",
+  "author": "",
+  "license": "ISC"
 }

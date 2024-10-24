@@ -1,19 +1,22 @@
 import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import Navbar from './Component/Navbar.jsx';
+import Footer from './Component/Footer.jsx';
+import Lpage from './Component/Lpage.jsx';
 import './App.css'
 
 function App() {
-
+  const [count, setCount] = useState(0)
 
   return (
     <>
-
-      <div>
-        
-          hello world
-            Lorem ipsum dolor sit amet consectetur kjnjcj adipisicing elit. Sequi minima voluptatem provident.
-        n dc d jd c dcj
-
-      </div>
+      <Navbar/>
+      <Lpage/>
+      <br/>
+      <hr/>
+      <br/>
+      <Footer/>
     </>
   )
 }
