@@ -11,12 +11,19 @@ function App() {
 
   return (
     <>
+<<<<<<< HEAD
       <Navbar/>
       <Lpage/>
       <br/>
       <hr/>
       <br/>
       <Footer/>
+=======
+
+      <div>
+        Hello! Arpit here
+      </div>
+>>>>>>> b07c9f9a632a38fd8c5511fb455a9efc33d6ed35
     </>
   )
 }
