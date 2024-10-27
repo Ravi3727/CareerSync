@@ -8,13 +8,13 @@ function App() {
 
   return (
     <>
-      {/* <Navbar/>
+      <Navbar/>
       <HeroSection/>
       <br/>
       <hr/>
       <br/>
-      <Footer/> */}
-  <JobSeekerProfile/>
+      <Footer/>
+  {/* <JobSeekerProfile/> */}
     </>
   )
 }
