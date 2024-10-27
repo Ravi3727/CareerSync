@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Outfit:wght@100..900&display=swap');
+body{
+    margin: 0px;
+}
+
+*{
+    font-family: "Inter",sans-serif;
+}
+
+#body-header{
+    background-image: linear-gradient(90deg, rgb(29, 99, 237) 0%, rgb(0, 42, 140) 100%);
+    height: 65vh;
+    opacity: 0.8;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+    text-align: center;
+}
+
+#my-name{
+    font-size: 4rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li{
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 1.2rem;
+
+}
+
+.horizontal-list li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 10px;
+    
+}
+.nav-menu li a:hover{
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+
+
+.text-center{
+    text-align: center;
+}
+
+#name-social-container{
+    margin-top: 20vh;
+}
+
+.social-icons li a i{
+    padding: 10px;
+    font-size: 2rem;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+.social-icons li a i:hover{
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+.nav-menu li a{
+    transition: color 0.5s, border-bottom 4px;
+}
+
+#about{
+    height: auto;
+    width: 95%;
+    position: relative;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: justify;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+#my-image{
+    height: 15rem;
+    width: 15rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid lightgrey;
+}
+
+
+
+.timeline{
+    position: relative;
+    border-radius: 6%;
+    width: 90%;
+    height: 900px;
+    border: 2px solid black;
+    margin: auto;
+    background-image: linear-gradient(90deg, rgb(29, 99, 237) 0%, rgb(0, 42, 140) 100%);
+    
+}
+
+.timeline-box{
+    position: relative;
+    margin: 20px;
+    width: 40%;
+    left: 5%;
+    height: 180px;
+    border: 1px solid black;
+    text-align: center;
+    margin-left: 5px;
+    color: white; 
+    background-color: grey;
+    border-radius: 10px; 
+    font-weight: bold;
+    background-color: rgb(16, 21, 27);
+    color: rgb(255, 255, 255);
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0ms;
+    transition-behavior: normal;
+    transition-property: box-shadow;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-width: 1.5px;
+    border-top-style: solid;
+    --dds-MuiPaper-outlined-borderColor: #2D404E;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    column-gap: 8px;
+    padding-top: 16px;
+    margin-left: 20px;
+    border-radius: 16px;
+
+}
+
+.timeline-logo{
+    height: 50px;
+    width: 35%;
+    background-color: white;
+    color: black;
+    margin: auto;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+.fa-brands{
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.fa-microchip{
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.timeline-box:nth-child(2n){
+    left: 53%;
+}
+
+.work-exp{
+    text-align: center;
+}
+
+.timeline-divider{
+    position: absolute;
+    height: 75%;
+    width: 0;
+    border: 3px dashed #0098fa6b;
+    top: 10%;
+    left: 50%;
+}
+
+.timeline-traveller{
+    position: sticky;
+    top: 25%;
+    transform: rotate(90deg); 
+}
+
+.timeline-box:nth-child(2n+1)::after{
+    content: '';
+    position: absolute;
+    top: 30%;
+    right: -13%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: orange;
+}
+
+.timeline-box:nth-child(2n)::after{
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: -10%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: orange;
+}
+
+#aeroplane{
+    font-size: 25px;
+}
+
+#car{
+    font-size: 25px;
+}
+
+.timeline-traveller2{
+    position: sticky;
+    top: 25%;
+}
+
+.timeline-text{
+    font-weight: bold;
+}
+
+span{ 
+    color: black;
+}
+.css-4ch45y {
+    background-color: rgb(16, 21, 27);
+    color: rgb(255, 255, 255);
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0ms;
+    transition-behavior: normal;
+    transition-property: box-shadow;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-width: 1.5px;
+    border-top-style: solid;
+    --dds-MuiPaper-outlined-borderColor: #2D404E;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    column-gap: 8px;
+    padding-top: 16px;
+    height: 100%;
+    width: 80%;
+    margin-left:10%;
+    }
+
+
+    *, ::before, ::after {
+    box-sizing: inherit;
+    }
+
+#work-experience{
+    margin-left: 42%;
+    color: black;
+}
+
+
+.section-heading{
+    margin-left: 42%;
+    color: black;
+    font-weight: bold;
+}
+
+.timeline-text{
+    color: darkorange;
+}
+
+.MuiTypography-root{
+    color: orange;
+}
+
+.container{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    margin-bottom: 20px;
+    background: linear-gradient(#ECEFFE, #CED6FB);
+}
+
+.card-list .card-item{
+    list-style: none;
+}
+
+
+.card-list .card-item .card-link{
+    user-select: none;
+    display: block;
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:hover{
+    border-color: #5372F0;
+}
+
+.card-list .card-link .card-image{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.card-list .card-link .badge{
+    color: #5372F0;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background: #DDE4FF;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card-list .card-link .badge.designer{
+    color: #B22485;
+    background: #F7DFF5;
+}
+
+.card-list .card-link .badge.marketer{
+    color: #B25A2B;
+    background: #FFE3D2;
+}
+
+.card-list .card-link .badge.gamer{
+    color: #205C20;
+    background: #D6F8D6;
+}
+
+.card-link .card-list .badge.editor{
+    color: #856404;
+    background: #fff3cd;
+}
+
+
+.card-list .card-link .card-title{
+    font-size: 1.19rem;
+    color: #000;
+    font-weight: 600;
+}
+
+.card-list .card-link .card-button{
+    height: 35px;
+    width: 35px;
+    color: #5372F0;
+    border-radius: 50%;
+    margin: 20px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #5372F0;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button{
+    color: #fff;
+    background: #5372F0;
+}
+
+.course-credential{
+    height: 50px;
+    width: 200px;
+    color: #5372F0;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #5372F0;
+    border-radius: 20px;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.course-credential:hover{
+    background: lightblue;
+}
