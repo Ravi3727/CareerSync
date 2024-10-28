@@ -1,17 +1,23 @@
 import React, { useState } from 'react';
 import { FiCamera } from "react-icons/fi";
 import backgroundImage from './blue.jpg';
+import { useNavigate } from 'react-router-dom';
+
 
 const RecruiterRegistration = () => {
     const [profileImage, setProfileImage] = useState(null);
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
     const [phone, setPhone] = useState('');
     const [companyName, setCompanyName] = useState('');
     const [companyWeb, setCompanyWeb] = useState('');
     const [designation, setDesignation] = useState('');
     const [linkedin, setLinkedin] = useState('');
     const [text, setText] = useState('');
+
+    const navigate = useNavigate();
+
 
     const handleImageChange = (e) => {
         const file = e.target.files[0];
@@ -24,19 +30,29 @@ const RecruiterRegistration = () => {
         }
     };
 
-    const onSubmit = (event) => {
+    const onSubmit = async(event) => {
         event.preventDefault();
-        // Optionally, handle form submission logic here (e.g., API call)
-        console.log({
+        
+        let r = await fetch("http://localhost:3001/", {method: "POST",  headers: {
+            "Content-Type": "application/json", 
+          }, body: JSON.stringify({
             name,
             email,
+            password,
             phone,
             companyName,
             companyWeb,
             designation,
             linkedin,
-            text,
-        });
+            desc:text,
+        })})
+
+          let res = await r.text()
+          console.log(event, res)
+          setTimeout(() => {
+              navigate("/");
+          }, 2000);
+
     };
 
     return (
@@ -82,6 +98,10 @@ const RecruiterRegistration = () => {
                     <div className='flex flex-col my-4 relative bg-white border-solid border-2 border-sky-500 rounded-md'>
                         <label htmlFor="email" className='absolute -top-4 ml-4 bg-inherit px-2'>Company email*</label>
                         <input type="email" id='email' name="email" value={email} onChange={(e) => setEmail(e.target.value)} required className='m-2 border-collapse focus:outline-none text-sm'/>
+                    </div>
+                    <div className='flex flex-col my-4 relative bg-white border-solid border-2 border-sky-500 rounded-md'>
+                        <label htmlFor="email" className='absolute -top-4 ml-4 bg-inherit px-2'>Password*</label>
+                        <input type="password" id='password' name="passwrod" value={password} onChange={(e) => setPassword(e.target.value)} required className='m-2 border-collapse focus:outline-none text-sm'/>
                     </div>
                     <div className='flex flex-col my-4 relative bg-white border-solid border-2 border-sky-500 rounded-md'>
                         <label htmlFor="phone" className='absolute -top-4 ml-4 bg-inherit px-2'>Phone no.*</label>
