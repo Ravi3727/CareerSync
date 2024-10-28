@@ -1,8 +1,8 @@
 import {useContext}  from 'react'
-import {StepperContext}  from '../../contexts/StepperContext'
+import {StepperContext}  from '../../contexts/StepperContext.js'
 
 
-export default function JobseekerRegitration() {
+export default function JobseekerRegistration() {
   const {userData, setUserData} = useContext(StepperContext);
 const handleChange =(e)=>{
   const{name,value}=e.target;
