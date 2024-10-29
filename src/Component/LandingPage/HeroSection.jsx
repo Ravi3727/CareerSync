@@ -1,4 +1,6 @@
 import React from 'react'
+import  JobCard from '../JobCards/JobCard.jsx'
+
 
 function HeroSection() {
   return (
@@ -36,6 +38,11 @@ function HeroSection() {
         <div className="c shadow-lg  p-6 transform transition-transform duration-300 hover:-translate-y-2 border-2 h-32 px-5 justify-center items-center flex rounded-lg">Video And Animations</div>
         <div className="c shadow-lg p-6 transform transition-transform duration-300 hover:-translate-y-2 border-2 h-32 px-5 justify-center items-center flex rounded-lg">AI Services</div>
       </div>
+
+      <JobCard  job = {{"title": "Frontend Developer",
+  "company": "Tech Solutions Inc.",
+  "description": "Responsible for designing and implementing user interfaces for web applications.","skills":"jsdev"}} />
+
 
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
