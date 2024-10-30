@@ -1,5 +1,5 @@
 import backgroundImage1 from './public/job-profile-header.jpg';
-import backgroundImage2 from './public/job-profile-background.jpg';
+import backgroundImage2 from './public/background.jpg';
 
 const JobProfile = () => {
     return(
@@ -21,18 +21,24 @@ const JobProfile = () => {
                         <p className='mx-2 border-2 border-blue-500 rounded-full px-4'>skill Required 4</p>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div className='flex gap-48'>
+                    <div className='border-blue-300 border-2 text-center rounded-md m-3 pt-2'>
                         <p>Working Hours & Work Type :</p>
                         <div className='flex m-2'>
                             <p className='mx-2 border-2 border-blue-500 rounded-full px-4'>2-4 hr per day</p>&
                             <p className='mx-2 border-2 border-blue-500 rounded-full px-4'>full time</p>
                         </div>
                     </div>
-                    <div>
+                    <div className='border-blue-300 border-2 text-center rounded-md m-3 p-2'>
                         <p>Payment method</p>
                         <div className='flex m-2'>
                             <p className='mx-2 border-2 border-blue-500 rounded-full px-4'>Online</p>
+                        </div>
+                    </div>
+                    <div className='border-blue-300 border-2 text-center rounded-md m-3 p-2'>
+                        <p>Location</p>
+                        <div className='flex m-2'>
+                            <p className='mx-2 border-2 border-blue-500 rounded-full px-4'>India</p>
                         </div>
                     </div>
                 </div>
