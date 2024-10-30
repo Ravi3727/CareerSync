@@ -1,5 +1,5 @@
 import backgroundImage1 from './public/job-profile-header.jpg';
-import backgroundImage2 from './public/background.jpg';
+import backgroundImage2 from './public/job-profile-background.jpg';
 
 const JobProfile = () => {
     return(

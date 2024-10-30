@@ -1,0 +1,55 @@
+.job-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .job-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .company-name {
+    color: #555;
+    font-weight: bold;
+  }
+  
+  .job-location {
+    font-style: italic;
+    color: #777;
+  }
+  
+  .job-description {
+    margin: 12px 0;
+  }
+  
+  .job-skills {
+    margin: 8px 0;
+  }
+  
+  .skill-badge {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-right: 8px;
+  }
+  
+  .apply-button {
+    background-color: lightcoral;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 16px;
+    cursor: pointer;
+  }
+  
+  .apply-button:hover {
+    background-color: orange;
+  }
+  
