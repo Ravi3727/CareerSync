@@ -56,7 +56,7 @@ const RecruiterRegistration = () => {
     };
 
     return (
-        <div className="h-screen w-screen flex flex-col justify-center items-center bg-center bg-cover"
+        <div className="h-screen w-screen flex flex-col justify-center items-center bg-cover"
              style={{ backgroundImage: `url(${backgroundImage})` }}>
             <div className='h-5/6 w-1/3 bg-white p-1 rounded-2xl shadow-2xl shadow-sky-300'>
                 <form className='h-full w-full overflow-y-auto px-7' onSubmit={onSubmit}> 
